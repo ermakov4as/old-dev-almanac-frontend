@@ -1,0 +1,12 @@
+[
+  {
+    "id": 3,
+    "name": "Some Lesson Name",
+    "cards": [
+      {
+        "id": 2,
+        "name": "Some Card Name"
+      }
+    ]
+  }
+]

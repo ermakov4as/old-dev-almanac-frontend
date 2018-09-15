@@ -1,0 +1,24 @@
+{
+  "id": 5,
+  "name": "English Language",
+  "tmp": "Some text",
+  "content": "Some html content",
+  "desc": "Description content",
+  "am": {
+    "pic": "source",
+    "examples": [
+      {
+        "question": "Some Question",
+        "answer": "Some Answer"
+      }
+    ]
+  },
+  "child": [
+    {
+      "name": "Связь существительных",
+      "array": [
+        2
+      ]
+    }
+  ]
+}

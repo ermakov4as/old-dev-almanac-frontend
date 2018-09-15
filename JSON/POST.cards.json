@@ -1,0 +1,34 @@
+{
+  "id": 2,
+  "name": "Some Card Name",
+  "content": "Some html content",
+  "desc": "Description content",
+  "image": "<Source of image>",
+  "video": "<Source of video>",
+  "time": 150,
+  "union_of_nodes": [
+    {
+      "id": 2,
+      "properties": [
+        "desc"
+      ]
+    }
+  ],
+  "nodes_of_graph": [
+    0
+  ],
+  "ams": [
+    {
+      "id": 5,
+      "image": "<Image url>",
+      "content": [
+        {
+          "question": "Some question",
+          "question_audio": "<Question audio url>",
+          "answer": "Some question",
+          "question_answer": "<Answer audio url>"
+        }
+      ]
+    }
+  ]
+}
