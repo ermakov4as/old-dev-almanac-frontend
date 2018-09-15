@@ -53,7 +53,7 @@ td:last-child {
 .newDicsipline, .newLesson {  
     display: block!important;  
     background-color: lightgreen;
-    margin-top: 20px;    
+    margin-top: 20px;   
 }
 
 .newDicsipline {
@@ -180,4 +180,11 @@ span {
 .extraMargin {
     margin-top: 17px;
     margin-bottom: 7px;
+}
+
+.pageFormat {
+    height: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 }

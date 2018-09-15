@@ -9,7 +9,7 @@ import '../DevelopStage.css';
 export default class extends Component {
     render() {
         return (
-            <LayoutContentWrapper style={{ height: "100vh" }}>
+            <LayoutContentWrapper className="pageFormat">
                 <LayoutContent>
                     <MainHeader />
                     <header className="App-header">

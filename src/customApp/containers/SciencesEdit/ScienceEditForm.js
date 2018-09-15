@@ -90,7 +90,7 @@ export default class ScienceEditForm extends React.Component {
             };*/
         
         return (
-            <div>
+            <div className="componentContent">
                 {this.state.sciences.map(science =>
                     <div key={science.id}>
                         <span className="formTitle">Название</span>
