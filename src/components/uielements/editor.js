@@ -32,17 +32,17 @@ export default class Editor extends Component {
   }
 
   render() {
-    const options = {
+    let options = {
       theme: 'snow',
       formats: Editor.formats,
-      placeholder: 'Write Something',
+      //placeholder: 'Write Something',
       value: this.state.value,
-      onChange: this.handleChange,
+      //onChange: this.handleChange,
       modules: this.quillModules,
     };
     return (
       <QuillEditor>
-        <ReactQuill {...options} />
+        <ReactQuill {...options}/>
       </QuillEditor>
     );
   }

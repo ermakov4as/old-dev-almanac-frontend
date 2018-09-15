@@ -2,6 +2,8 @@ import React from 'react';
 import axios from 'axios';
 import '../DevelopStage.css';
 import Button from '../../../components/uielements/button';
+import { Input } from 'antd';
+//import Editor from '../../../components/uielements/editor';
 
 const URL_API = 'http://127.0.0.1:8081';
 const URL_FRONT = 'http://localhost:3000/dashboard';
@@ -12,6 +14,9 @@ export default class ScienceEditForm extends React.Component {
         sciences: [],
         sc_lessons: [],
         isShowed: false,
+        /*editorState: null,
+        loading: false,
+        iconLoading: false*/
     };
 
     componentDidMount() {
@@ -68,18 +73,33 @@ export default class ScienceEditForm extends React.Component {
     };
 
     render() {
+        /*const onEditorStateChange = editorState => {
+            this.setState({ editorState });
+          };
+        let editorOption = {
+            style: { width: '90%', height: '70%' },
+            editorState: this.state.editorState,
+            toolbarClassName: 'home-toolbar',
+            wrapperClassName: 'home-wrapper',
+            editorClassName: 'home-editor',
+            onEditorStateChange: onEditorStateChange,
+            uploadCallback: uploadCallback,
+            toolbar: { image: { uploadCallback: uploadCallback } },
+            onChange: this.handleChangeContent,
+            placeholder: science.name
+            };*/
+        
         return (
             <div>
                 {this.state.sciences.map(science =>
                     <div key={science.id}>
                         <span className="formTitle">Название</span>
                         <form>
-                            <input
-                                className="nameInput"
-                                type="text"
-                                name="name"
+                            <Input
+                                size="large"
                                 onChange={this.handleChangeName}
-                                placeholder={science.name}    
+                                placeholder={science.name}
+                                className="nameInput"
                             />
                             <Button
                                 className="save"
@@ -106,6 +126,7 @@ export default class ScienceEditForm extends React.Component {
                             onChange={this.handleChangeDesc}
                             placeholder={science.desc}    
                         />
+                        
                         <span className="formTitle">Содержимое</span>
                         <textarea
                             className="contentInput"
@@ -115,12 +136,11 @@ export default class ScienceEditForm extends React.Component {
                             placeholder={science.content}    
                         />
                         <span className="formTitle">Ссылка на видео</span>
-                        <input
-                            className="videoInput"
-                            type="text"
-                            name="video"
+                        <Input
+                            size="large"
                             onChange={this.handleChangeVideo}
-                            placeholder={science.video}    
+                            placeholder={science.video}
+                            className="videoInput"
                         />
                         <div className="extraMargin">
                             <span className="formTitleAdd">
@@ -163,3 +183,19 @@ export default class ScienceEditForm extends React.Component {
         )
     }
 }
+
+
+/*
+<input
+    className="nameInput"
+    type="text"
+    name="name"
+    onChange={this.handleChangeName}
+    placeholder={science.name}    
+/>
+
+
+
+<Editor {...editorOption} />
+
+*/
