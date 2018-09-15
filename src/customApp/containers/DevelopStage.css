@@ -1,0 +1,183 @@
+.App-header {
+    min-height: 100px;
+    margin: -35px!important;
+    margin-bottom: 0!important;
+    background-color: azure;
+    font-size: large;
+}
+
+.App-title {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    margin-bottom: 20px;    
+}
+
+table {
+    background-color: rgba(255, 255, 255, 0.725);
+    width: 100%!important;
+    font-size: 20px;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 20px;
+    color: black;
+}
+
+td {border: 1px solid darkblue;}
+
+td:first-child {
+    width: 50%;
+    padding: 15px;
+}
+
+td:last-child {
+    width: 30%;
+}
+
+.treeBtn, .editBtn, .newDicsipline {
+    font-size: 20px!important;
+    color: black!important;
+    padding: 20px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.treeBtn {background-color: greenyellow;}
+.editBtn {background-color: orange;}
+
+.treeBtn:hover, .editBtn:hover, .newDicsipline:hover {
+    color: blue!important;
+    background-color: white;
+}
+
+.newDicsipline, .newLesson {  
+    display: block!important;  
+    background-color: lightgreen;
+    margin-top: 20px;    
+}
+
+.newDicsipline {
+    display: block!important;
+    border-radius: 50px!important;
+    width: 300px;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    padding-top: 20px!important;
+    padding-bottom: 50px!important;
+    line-height: 1;
+}
+
+.newLesson {
+    margin-left: auto;
+    border-radius: 10px!important;
+    font-size: 28px!important;
+    padding-bottom: 38px!important;
+}
+
+span {
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.headTable {
+    margin-top: 0!important;
+    width: 100%!important;
+}
+
+.headTr {
+    background-color: azure;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.headTableTd {
+    width: 25%!important;
+    max-width: 100px!important;
+    text-align: center!important;
+    background-color: rgb(237, 237, 237);
+}
+
+.formTitle, .formTitleAdd {    
+    font-size: 24px;
+    color:black;
+    margin-left: -35px;
+    padding: 7px;
+}
+
+.formTitle {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.formTitleAdd {
+    display: inline;
+}
+
+.save {
+    width: 15%;
+    color: black;
+    background-color: greenyellow;
+}
+
+.cancel {
+    width: 15%;
+    color: black;
+    background-color: darkorange;
+}
+
+.nameInput, .descInput, .contentInput, .videoInput {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nameInput {width: 70%;}
+
+.descInput {
+    width: 100%;
+    grid-auto-rows: auto;
+}
+
+.contentInput {
+    width: 100%;
+    grid-auto-rows: auto;
+    min-height: 120px;
+}
+
+.videoInput {width: 100%;}
+
+.sciencesTable {
+    background-color: rgb(237, 237, 237);
+    margin-bottom: -1px;
+}
+
+.showHideButton {
+    margin-right: 0!important;
+    margin-left: auto!important;
+    color: blue;
+    font-style: normal;
+    text-decoration-line: underline;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.showHideButton:hover {
+    color: darkred;
+    font-weight: bold;
+    background-color: azure;
+}
+
+.extraMargin {
+    margin-top: 17px;
+    margin-bottom: 7px;
+}
