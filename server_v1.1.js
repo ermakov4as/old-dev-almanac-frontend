@@ -13,7 +13,8 @@ function readJsonFileSync(filepath) {
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "GET,HEAD,OPTIONS,POST,PUT");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
   next();
 });
 
@@ -48,7 +49,7 @@ get_sciences_1 = readJsonFileSync('./JSON/GET.sciences.1.json');
 put_req_sciences_1 = readJsonFileSync('./JSON/PUT.req.sciences.1.json');
 put_res_sciences_1 = readJsonFileSync('./JSON/PUT.res.sciences.1.json');
 
-app.route('/sciences/1/')
+app.route('/sciences/1/edit')
   .get(function(req, res) {
 		res.json(get_sciences_1);
 		console.log('get-sciences-1');

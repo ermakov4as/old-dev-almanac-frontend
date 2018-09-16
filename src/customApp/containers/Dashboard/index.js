@@ -3,8 +3,8 @@ import LayoutContentWrapper from "../../../components/utility/layoutWrapper.js";
 import LayoutContent from "../../../components/utility/layoutContent";
 import DisciplinesList from "./DisciplinesList";
 import NewDiscipline from "./NewDiscipline";
-import MainHeader from "../MainHeader";
-import '../DevelopStage.css';
+import MainHeader from "../../components/MainHeader";
+import '../commonStyle.css';
 
 export default class extends Component {
     render() {

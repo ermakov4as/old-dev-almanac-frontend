@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import '../DevelopStage.css';
+import '../commonStyle.css';
 
 const URL_API = 'http://127.0.0.1:8081';
 const URL_FRONT = 'http://localhost:3000/dashboard';

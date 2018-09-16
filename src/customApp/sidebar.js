@@ -1,4 +1,4 @@
-const id_vopr = '1';
+//const id_vopr = '1';
 
 const options = [
   {
@@ -18,13 +18,18 @@ const options = [
   },*/
   {
     key: 'sciences',
-    label: "Subjects' list",
+    label: "Almanac 20/80",
     leftIcon: 'ion-university'
   },
-  {
+  /*{
     key: `sciences/${id_vopr}/edit`,
     label: "Subject's editing",
     leftIcon: 'ion-coffee'
-  }
+  }*/
+  /*{
+    key: 'sciences/:id/edit',
+    label: "Subject's editing",
+    leftIcon: 'ion-coffee'
+  }*/
 ];
 export default options;

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import LayoutContentWrapper from "../../../components/utility/layoutWrapper.js";
 import LayoutContent from "../../../components/utility/layoutContent";
-import '../DevelopStage.css';
-import MainHeader from "../MainHeader";
+import '../commonStyle.css';
+import MainHeader from "../../components/MainHeader";
 import ScienceEditForm from "./ScienceEditForm";
 import NewLesson from "./NewLesson";
 

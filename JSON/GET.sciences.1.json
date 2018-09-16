@@ -1,11 +1,20 @@
 [
   {
-    "id": 3,
+    "id": 1,
     "name": "Some Lesson Name",
-    "cards": [
+    "desc": "Description",
+    "content": "Science content",
+    "video": "Link to video",
+    "lessons": [
       {
-        "id": 2,
-        "name": "Some Card Name"
+        "id": 1,
+        "name": "1st Lesson Name",
+        "desc": "Lesson 1 description"
+      },
+      {
+        "id": 4,
+        "name": "2nd Lesson Name",
+        "desc": "Lesson 2 description"
       }
     ]
   }

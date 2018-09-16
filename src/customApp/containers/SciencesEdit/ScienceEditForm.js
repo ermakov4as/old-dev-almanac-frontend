@@ -1,13 +1,17 @@
 import React from 'react';
 import axios from 'axios';
-import '../DevelopStage.css';
+import '../commonStyle.css';
 import Button from '../../../components/uielements/button';
 import { Input } from 'antd';
 //import Editor from '../../../components/uielements/editor';
 
 const URL_API = 'http://127.0.0.1:8081';
 const URL_FRONT = 'http://localhost:3000/dashboard';
-const base_id = '1';
+const len_URL_FRONT = URL_FRONT.length;
+const base_url = window.location.href;
+const len_begin = len_URL_FRONT + '/sciences/'.length;
+const len_end = base_url.length - '/edit'.length;
+const base_id = base_url.substring(len_begin, len_end);
 
 export default class ScienceEditForm extends React.Component {
     state = {
@@ -19,8 +23,13 @@ export default class ScienceEditForm extends React.Component {
         iconLoading: false*/
     };
 
+    /*componentWillMount() {
+        NProgress.start();
+    }*/
+
     componentDidMount() {
         axios.get(`${URL_API}/sciences/${base_id}/edit`)
+        //axios.get(`${URL_API}/sciences/:id/edit`)
             .then(res => {
                 console.log(res);
                 this.setState({ sciences: res.data });
@@ -38,7 +47,7 @@ export default class ScienceEditForm extends React.Component {
             desc: this.state.desc,
         };
 
-        axios.put(`${URL_API}/sciences/${base_id}/`, {sc})
+        axios.put(`${URL_API}/sciences/${base_id}/edit`, {sc})
             .then(res => {
                 alert('Saved!');
                 console.log(res);
@@ -90,7 +99,7 @@ export default class ScienceEditForm extends React.Component {
             };*/
         
         return (
-            <div className="componentContent">
+            <div>
                 {this.state.sciences.map(science =>
                     <div key={science.id}>
                         <span className="formTitle">Название</span>
@@ -98,7 +107,7 @@ export default class ScienceEditForm extends React.Component {
                             <Input
                                 size="large"
                                 onChange={this.handleChangeName}
-                                placeholder={science.name}
+                                defaultValue={science.name}
                                 className="nameInput"
                             />
                             <Button
@@ -139,7 +148,7 @@ export default class ScienceEditForm extends React.Component {
                         <Input
                             size="large"
                             onChange={this.handleChangeVideo}
-                            placeholder={science.video}
+                            defaultValue={science.video}
                             className="videoInput"
                         />
                         <div className="extraMargin">

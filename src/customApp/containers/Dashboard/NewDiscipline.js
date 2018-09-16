@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import '../DevelopStage.css';
+import '../commonStyle.css';
 import Button from '../../../components/uielements/button';
 
 const URL_API = 'http://127.0.0.1:8081';
